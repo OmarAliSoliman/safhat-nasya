@@ -1,0 +1,259 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap");
+@font-face {
+  font-family: myFont;
+  src: url("../fonts/Neo Sans Arabic Regular.ttf");
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: 0 !important;
+}
+
+body {
+  direction: rtl;
+  font-family: "Cairo", sans-serif;
+}
+
+.clear {
+  clear: both;
+}
+
+.header {
+  background-position: center;
+  background-size: cover;
+  padding-top: 115px;
+  padding-bottom: 115px;
+  position: relative;
+}
+.header::after {
+  background-color: rgba(61, 73, 94, 0.6);
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.header .header-content {
+  margin-top: 50px;
+  position: relative;
+  z-index: 4;
+}
+.header .header-content h5 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+}
+.header .header-content p {
+  color: #fff;
+  font-size: 18px;
+}
+.header .header-content p a {
+  color: #fff;
+  font-weight: bold;
+}
+.header .header-content .btn {
+  width: 150px;
+  padding: 12px;
+  background-color: #fff;
+  color: #000;
+  margin-top: 10px;
+  transition: all 0.5s ease;
+}
+.header .header-content .btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+.header .header-img img {
+  width: 100%;
+}
+
+.all-items {
+  background-color: #3d495e;
+  text-align: center;
+  padding: 30px 0 30px 0;
+  position: relative;
+}
+.all-items h5 {
+  color: #fff;
+  font-size: 25px;
+}
+.all-items p {
+  color: #fff;
+  font-size: 18px;
+}
+.all-items p a {
+  color: #0073bc;
+}
+
+.pargraph {
+  margin-top: 120px;
+}
+.pargraph .par-img img {
+  width: 500px;
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 10px;
+}
+.pargraph .par-content {
+  margin-top: 30px;
+}
+.pargraph .par-content h5 {
+  color: #3d495e;
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.pargraph .par-content p {
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 10px;
+}
+
+.faq {
+  background-color: #f6f8fa;
+  padding-top: 99px;
+  padding-bottom: 75px;
+  margin-top: 90px;
+}
+.faq .serv-header {
+  text-align: center;
+  margin-top: 66px;
+  margin-bottom: 45px;
+}
+.faq .serv-header h5 {
+  font-size: 36px;
+  color: #595cd4;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.faq .serv-header p {
+  font-smooth: 14px;
+  color: #232937;
+}
+.faq .faq-accordion {
+  margin-top: 80px;
+}
+.faq .faq-accordion .btn {
+  text-align: right;
+  background-color: transparent;
+  padding: 0;
+  margin-top: 5px;
+  white-space: normal !important;
+  position: relative;
+  height: 60px;
+}
+.faq .faq-accordion .btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.faq .faq-accordion .btn h5 {
+  position: relative;
+  font-size: 18px;
+  margin: 0;
+  color: #555555;
+  margin-bottom: 10px;
+  word-wrap: break-word !important;
+  width: 80%;
+  line-height: 30px;
+}
+.faq .faq-accordion .btn::before {
+  content: "";
+  font-family: "FontAwesome";
+  display: inline-block;
+  left: 0;
+  top: 40%;
+  transform: translate(0, -50%);
+  width: 41px;
+  height: 41px;
+  text-align: center;
+  line-height: 41px;
+  font-weight: normal;
+  font-size: 15px;
+  margin-left: 10px;
+  color: #232937;
+  border-radius: 3px;
+  position: absolute;
+}
+.faq .faq-accordion .single-faq {
+  background-color: #fff;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.faq .faq-accordion .collapse-body p {
+  font-size: 16px;
+  margin: 0;
+  padding-bottom: 20px;
+  color: #b5b5b5;
+}
+.faq .faq-accordion .btn[aria-expanded=true]::before {
+  content: "";
+}
+
+.our-works {
+  padding-top: 81px;
+  padding-top: 70px;
+  padding-bottom: 40px;
+  background-color: #f8f9fa;
+}
+.our-works .our-works-header {
+  text-align: center;
+  font-size: 25px;
+  color: #0073bc;
+  margin-bottom: 20px;
+}
+.our-works .card {
+  display: block;
+  height: 226px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+}
+.our-works .card:hover {
+  transform: translateY(-10px);
+}
+.our-works .btn-more {
+  text-align: center;
+}
+.our-works .btn-more .btn {
+  background-color: #0073bc;
+  border-radius: 5px;
+  color: #fff;
+  width: 120px;
+  padding: 10px;
+  transition: all 0.5s ease;
+  margin-top: 30px;
+}
+.our-works .btn-more .btn:hover {
+  background-color: #fff;
+  border: 1px solid #0073bc;
+  color: #0073bc;
+}
+
+@media (max-width: 800px) {
+  .create-your-app h5 {
+    width: 100%;
+  }
+
+  .faq .faq-accordion .btn {
+    height: 86px;
+  }
+}
+@media (max-width: 524px) {
+  .create-your-app h5 {
+    width: 100%;
+  }
+
+  .faq .faq-accordion .btn {
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
